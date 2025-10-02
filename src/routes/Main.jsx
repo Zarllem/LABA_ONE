@@ -9,7 +9,7 @@ const MainPage = () => {
   const params = useParams();
   const [name, setName] = useState("");
 
-  const texts = useMemo(() => ["Я боюсь Пономарева"], []);
+  const texts = useMemo(() => ["Я боюсь Пономарева"], []); // Изменения в HelloCard
 
   const [textHello, setTextHello] = useState(texts[0]);
 

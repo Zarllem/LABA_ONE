@@ -4,7 +4,7 @@ const HelloCard = ({ text, onNext }) => {
   const [name, setName] = useState("");
   const [name1, setValue] = useState("");
   const [showData, setShowData] = useState(false);
-  const handleSubmit = () => {
+  const switchData = () => {
     setShowData(!showData);
   };
 
@@ -54,7 +54,7 @@ const HelloCard = ({ text, onNext }) => {
           onChange={(e) => setValue(e.target.value)}
         />
       </div>
-      <button className="btn-outline1" onClick={handleSubmit}>
+      <button className="btn-outline1" onClick={switchData}>
         Отправить
       </button>
     </div>
